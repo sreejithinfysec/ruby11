@@ -1,14 +1,14 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.2.3'
+gem 'rails', '7.0.0'
 
 gem 'coffee-rails', '~> 4.1.0'
 gem 'devise'
 gem 'jquery-rails'
-gem 'nokogiri'
-gem 'sass-rails', '~> 4.0'
+gem 'nokogiri', '>= 1.15.7'
+gem 'sass-rails', '~> 6.0', '>= 6.0.0'
 gem 'sqlite3'
-gem 'turbolinks'
+gem 'turbolinks', '>= 5.0.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'symmetric-encryption', '~> 3.8.1'
 
@@ -31,7 +31,7 @@ group :development, :test do
 end
 
 group :development do
-  gem 'web-console', '~> 2.0' # Access IRB on error pages or by <%= console %> in views
+  gem 'web-console', '~> 3.0', '>= 3.0.0' # Access IRB on error pages or by <%= console %> in views
 end
 
 group :test do
